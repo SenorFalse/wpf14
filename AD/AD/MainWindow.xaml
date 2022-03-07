@@ -1,0 +1,79 @@
+﻿<Window x:Class="AD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800"
+        MinHeight="800" MinWidth="800"
+        >
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White" />
+    </Window.Background>
+
+    <Border Name="border" >
+        <Border.Background>
+            <LinearGradientBrush Opacity="0.5" StartPoint="0.1,1" EndPoint="0.9,1">
+                <GradientStop Color="Red" Offset="0.8"/>
+                <GradientStop Color="White" Offset="0.2"/>
+                <GradientStop Color="WhiteSmoke" Offset="0.5"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Border.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="border" 
+                                Storyboard.TargetProperty="Background.GradientStops[0].Color"
+                                Duration="0:0:10" RepeatBehavior="Forever" >
+                                <LinearColorKeyFrame KeyTime="0:0:2" Value="Black"/>
+                                <LinearColorKeyFrame KeyTime="0:0:6" Value="Azure"/>
+                                <LinearColorKeyFrame KeyTime="0:0:8" Value="DarkGray"/>
+                                <LinearColorKeyFrame KeyTime="0:0:10" Value="HotPink"/>
+                            </ColorAnimationUsingKeyFrames>
+
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="border" 
+                                Storyboard.TargetProperty="Background.GradientStops[1].Color"
+                                Duration="0:0:10" RepeatBehavior="Forever" >
+                                <LinearColorKeyFrame KeyTime="0:0:2" Value="Black"/>
+                                <LinearColorKeyFrame KeyTime="0:0:6" Value="Azure"/>
+                                <LinearColorKeyFrame KeyTime="0:0:8" Value="DarkGray"/>
+                                <LinearColorKeyFrame KeyTime="0:0:10" Value="HotPink"/>
+                            </ColorAnimationUsingKeyFrames>
+
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="border" 
+                                Storyboard.TargetProperty="Background.GradientStops[2].Color"
+                                Duration="0:0:10" RepeatBehavior="Forever" >
+                                <LinearColorKeyFrame KeyTime="0:0:2" Value="Black"></LinearColorKeyFrame>
+                                <LinearColorKeyFrame KeyTime="0:0:6" Value="Azure"/>
+                                <LinearColorKeyFrame KeyTime="0:0:8" Value="DarkGray"/>
+                                <LinearColorKeyFrame KeyTime="0:0:10" Value="HotPink"/>
+                            </ColorAnimationUsingKeyFrames>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Border.Triggers>
+
+        <Grid  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center">
+                <TextBlock Name="TBLOCKName" FontSize="100"  Margin="60,0,0,0" Foreground ="White" FontStyle="Italic" FontWeight="DemiBold">Warehouse</TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" Width="300">
+                <Button x:Name="BLink" Margin="0,50,0,20" Height="35" Width="150" Content="Site" Click="BLink_Click"/>
+                <TextBlock x:Name="TBLOCKDownLettering" Text="Мы Дом для ваших товаров!" Width="215" FontSize="17" Foreground ="White" FontStyle="Italic" FontFamily="Times New Roman"/>
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>

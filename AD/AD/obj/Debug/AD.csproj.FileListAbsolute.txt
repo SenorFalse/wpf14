@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD_MarkupCompile.cache
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD_MarkupCompile.lref
+C:\Users\User\Desktop\Desktop\AD\AD\bin\Debug\AD.exe.config
+C:\Users\User\Desktop\Desktop\AD\AD\bin\Debug\AD.exe
+C:\Users\User\Desktop\Desktop\AD\AD\bin\Debug\AD.pdb
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.g.resources
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.Properties.Resources.resources
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.exe
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.pdb
+C:\Users\User\Desktop\Desktop\AD\AD\obj\Debug\AD.csprojAssemblyReference.cache
